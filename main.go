@@ -910,7 +910,7 @@ func main() {
 	flag.Float64Var(&beta, "beta", 1.0, "Beta先验参数β")
 	flag.Float64Var(&epsilon, "epsilon", 0.05, "ε-greedy探索率")
 	flag.IntVar(&minClusterSize, "min-cluster", 10, "最小簇大小")
-	flag.IntVar(&maxWildcard, "max-wildcard", 2, "最大通配符数")
+	flag.IntVar(&maxWildcard, "min-wildcard", 2, "最大通配符数")
 	flag.Parse()
 
 	if cluster_file == "" && address_file == "" {
